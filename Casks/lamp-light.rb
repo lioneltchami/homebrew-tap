@@ -21,7 +21,7 @@ cask "lamp-light" do
   app "Lamp Light.app"
 
   zap trash: [
-    "~/Library/Application Support/Lamp Light",
+    "~/Library/Application Support/bible-questions-app",
     "~/Library/Caches/org.lamplight.desktop",
     "~/Library/Preferences/org.lamplight.desktop.plist",
     "~/Library/Saved Application State/org.lamplight.desktop.savedState",
