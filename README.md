@@ -22,20 +22,16 @@ brew upgrade --cask lamp-light
 brew uninstall --cask lamp-light
 ```
 
-## Update the cask after a release
+## Updates
 
-When [Lamp-Light](https://github.com/lioneltchami/Lamp-Light) ships a new `v*` tag:
+**Automatic:** each Lamp-Light `v*` release CI pushes a cask bump here (version + SHA-256). You normally do nothing.
 
-1. Download the arm64 and x64 DMGs from the GitHub Release.
-2. Compute checksums: `shasum -a 256 Lamp-Light-*.dmg`
-3. Bump `version` and both `sha256` values in [`Casks/lamp-light.rb`](./Casks/lamp-light.rb).
-4. Commit and push to this repo.
-
-Or from a machine with `gh` and the release assets:
+**Manual fallback** (if CI skipped):
 
 ```bash
-VERSION=1.2.17   # set to new version
+VERSION=1.2.17
 gh release download "v${VERSION}" --repo lioneltchami/Lamp-Light \
   --pattern 'Lamp-Light-arm64.dmg' --pattern 'Lamp-Light-x64.dmg'
 shasum -a 256 Lamp-Light-arm64.dmg Lamp-Light-x64.dmg
+# edit Casks/lamp-light.rb then commit
 ```
