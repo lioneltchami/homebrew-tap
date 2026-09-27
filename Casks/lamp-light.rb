@@ -1,9 +1,9 @@
 cask "lamp-light" do
   arch arm: "arm64", intel: "x64"
 
-  version "1.2.22"
-  sha256 arm:   "d6282226ae652d966efe9e17ceb96a769eda0bd3716873dcf0a22644b0aed860",
-         intel: "ea96c8b558e33aa7a6b8e642958b8ae66b934dad1d5c75a41b3054a56eb683e9"
+  version "1.2.23"
+  sha256 arm:   "167f1dbe2b49849cc9f85ee47a54d1a7966733e9c0191c187ec266db40dafcc8",
+         intel: "f6c90a1f58f73a90e7fbb848ed90eb57d2130e62350c5c16e02f0d28cc7c3040"
 
   url "https://github.com/lioneltchami/Lamp-Light/releases/download/v#{version}/Lamp-Light-#{arch}.dmg"
   name "Lamp & Light"
