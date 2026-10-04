@@ -1,6 +1,6 @@
 cask "headspace" do
-  version "2.0.0"
-  sha256 "ab027dac27749f527510f175fc846728962db6d57f977c48135d6de50e3c0d68"
+  version "2.0.1"
+  sha256 "3d967d2235c6e804e23720a949e1bb0c0f05c4b4dfea0254a24ef57a95a895ac"
 
   url "https://github.com/lioneltchami/Headspace/releases/download/v#{version}/Headspace-#{version}-arm64.dmg"
   name "Headspace"
