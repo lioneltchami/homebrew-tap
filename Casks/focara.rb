@@ -1,9 +1,9 @@
 cask "focara" do
   arch arm: "arm64", intel: "x64"
 
-  version "0.1.2"
-  sha256 arm:   "74f914af10a218a1ae7113f164351879a5dc4c4c833361b13c2eca1283638f77",
-         intel: "73ebd5b48e8f629ee399e2484d538abd130a2df01926cd5cbf20004f26d098d6"
+  version "0.1.3"
+  sha256 arm:   "0bd99377447019522a56c18807cce9f6f9ad36c2c14655050623b3295c10367e",
+         intel: "a22aea76a9b62587582c806d38e85e380790793e7e323b722beb8cae58833edb"
 
   url "https://github.com/lioneltchami/Focara/releases/download/v#{version}/Focara-#{version}-mac-#{arch}.dmg"
   name "Focara"
