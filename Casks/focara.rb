@@ -18,8 +18,4 @@ cask "focara" do
   depends_on macos: :sonoma
 
   app "Focara.app"
-
-  caveats <<~EOS
-    Focara is not signed or notarized yet. On first launch, use System Settings > Privacy & Security > Open Anyway.
-  EOS
 end
